@@ -1,64 +1,75 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { kebabCase } from 'lodash'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-class BlogRollTemplate extends React.Component {
+class BlogRoll extends React.Component {
+  // Maps select tag strings to colors
+  mapTag(tag) {
+    switch(tag) {
+      case 'javascript': 
+        return '#fff082'
+      case 'vue':
+        return '#54af82'
+      case 'life':
+        return '#66e268'
+      case 'college':
+        return '#e9a8ea'
+      case 'OMSCS':
+        return '#6fb0ed'
+      case 'frontend':
+        return '#f2526f'
+      default:
+        return '#eea0ef'
+    }
+  }
+
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    let { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
-        {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          width:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.width,
-                          height:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.height,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
+      <div className="blog-roll">
+      {posts &&
+        posts.map(({ node: post }) => (
+          <div key={post.id} className="blog-post-tab-container">
+            {/* BLOG POST TAB */}
+            <Link
+              to={post.fields.slug}
+              className="blog-post-tab"
+            >
+            <div>
+              <article>
+                <div className="date">
+                  <p>{post.frontmatter.date}</p>
+                </div>
+                <header className="title-container">
+                  <h2 className="title">{post.frontmatter.title}</h2>
                 </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
               </article>
             </div>
-          ))}
+            </Link>
+            {/* BLOG POST TAG */}
+            <div className="tags">
+              {post.frontmatter.tags && 
+              post.frontmatter.tags.map((tag, idx) => 
+                <Link
+                  to={`/tags/${tag.toLowerCase()}`}
+                  key={idx}
+                >
+                  <span  
+                    className="tag"
+                    style={{
+                      backgroundColor : this.mapTag(tag)
+                    }}
+                  >
+                    <span className="tag-text">{tag}</span>
+                  </span>
+                </Link>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     )
   }
@@ -72,45 +83,39 @@ BlogRoll.propTypes = {
   }),
 }
 
-
-export default function BlogRoll() {
-  return (
-    <StaticQuery
-      query={graphql`
-        query BlogRollQuery {
-          allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 400)
-                id
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                  templateKey
-                  date(formatString: "MMMM DD, YYYY")
-                  featuredpost
-                  featuredimage {
-                    childImageSharp {
-                      gatsbyImageData(
-                        width: 120
-                        quality: 100
-                        layout: CONSTRAINED
-                      )
-
+export default (props) => (
+  <StaticQuery
+    query={graphql`
+      query BlogRollQuery {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+        ) {
+          edges {
+            node {
+              excerpt(pruneLength: 400)
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                templateKey
+                date(formatString: "MMMM DD, YYYY")
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, quality: 100) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
+                tags
               }
             }
           }
         }
-      `}
-      render={(data, count) => <BlogRollTemplate data={data} count={count} />}
-    />
-  );
-}
+      }
+    `}
+    render={(data, count) => <BlogRoll data={data} count={count} index={props.index}/>}
+  />
+)

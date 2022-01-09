@@ -1,0 +1,154 @@
+section#projectpage{
+  padding: 3rem;
+  width: 70%;
+
+  h1, .content > h1 {
+    font-family: 'AvenirNext-Bold', Arial;
+    font-size: calculateRem(40px);
+    color: $secondary-text;
+  }
+
+  .content > ul,
+  .content > ol,
+  .content p {
+    font-family: 'AvenirNext-Regular', Arial;
+    font-size: calculateRem(24px);
+    line-height: 2.25rem;
+  }
+
+  .content > h1 {
+    font-family: 'AvenirNext-Bold', Arial;
+    font-size: calculateRem(40px);
+    color: indianred;
+  }
+
+  .content a {
+    color: $blue-link;
+    cursor: pointer;
+    font-family: 'AvenirNext-Regular', Arial;
+    font-weight: bold;
+  }
+  .content a:hover {
+    color: darken($blue-link, 10%);
+  }
+
+  .subtitle,
+  .content > p > img {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    font-size: calculateRem(20px);
+    font-family: 'AvenirNext-Regular', Arial;
+    text-align: center;
+  }
+
+  .subtitle {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .image-25,
+  .image-25 + p > img{
+    width: 25% !important;
+  }
+
+  .image-50,
+  .image-50 + p > img{
+    width: 50% !important;
+  }
+
+  .image-100,
+  .image-100 + p > img{
+    width: 100% !important;
+  }
+
+  .image-third + p > img {
+    width: 33%;
+  }
+
+  .image-third,
+  .image-third + p,
+  .image-third + p > img {
+    display: inline;
+  }
+
+}
+
+.projectpage-image {
+  width: 100%;
+  height: 18vw;
+}
+
+.projectpage-image-large {
+  height: 40vw;
+}
+
+div.quote {
+  padding: 2rem;
+  background-color: darken($primary-background,15%);
+  font-family: 'AvenirNext-Regular', Arial;
+  font-size: calculateRem(22px);
+  line-height: 2rem;
+}
+
+@include mobile {
+  section#projectpage{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+
+    .title, .content > h1 {
+      font-size: calculateRem(30px);
+    }
+
+    .content > ul,
+    .content > ol,
+    .content p {
+      font-size: calculateRem(20px);
+      line-height: 2rem;
+    }
+
+    .subtitle,
+    .content > p > img {
+      width: 90%;
+      font-size: calculateRem(16px);
+      line-height: 1.5rem;
+    }
+
+    .subtitle {
+      justify-content: center;
+    }
+
+    .image-25,
+    .image-25 + p > img,
+    .image-50,
+    .image-50 + p > img{
+      width: 100% !important;
+    }
+
+    .image-third + p > img {
+      width: 100%;
+    }
+
+  }
+  
+  blockquote {
+    margin: 0;
+  }
+
+  div.quote {
+    width: 90%;
+    padding: 2rem 1rem;
+    font-size: calculateRem(20px);
+    line-height: 1.75rem;
+  }
+
+
+  .projectpage-image {
+    width: 100%;
+    height: 22.5vw;
+  }
+  .projectpage-image-large {
+    height: 50vw;
+  }
+}

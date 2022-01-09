@@ -1,0 +1,24 @@
+// Normalized Styles
+@import '../../node_modules/normalize.css/normalize.css';
+// Fonts
+@import 'fonts/fonts';
+// Base Styles
+@import 'base/base';
+// Page Specific Styles
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/project';
+@import 'pages/404';
+@import 'pages/blog';
+@import 'pages/blog-post';
+@import 'pages/tags';
+// Component Specific Styles
+@import 'components/navbar';
+@import 'components/layout';
+@import 'components/work';
+@import 'components/project';
+@import 'components/blogroll';
+@import 'components/footer';
+@import 'components/projectpreview';
+// PRISM
+@import 'prism/prism-vsc-dark-plus';

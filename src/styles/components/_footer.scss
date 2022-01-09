@@ -1,0 +1,44 @@
+footer {
+  width: 100%;
+  background-color: $secondary-background;
+}
+
+footer .logo {
+  filter: brightness(0) invert(1);
+  flex-basis: 10%;
+  padding: 2rem 0rem;
+  width: 5rem;
+}
+
+.footer-content-text {
+  flex-basis: 100%;
+}
+
+.footer-content-container {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "AvenirNext-Bold", Arial;
+  flex-wrap: wrap;
+  line-height: 2rem;
+  font-size: calculateRem(14px);
+}
+
+.footer-content-container a {
+  padding: 1rem 0rem;
+  color: white;
+  font-family: "AvenirNext-Bold", Arial;
+}
+
+@include mobile {
+  footer .logo {
+    filter: brightness(0) invert(1);
+    flex-basis: 10%;
+    padding: 2rem 0rem;
+    width: 7.5rem;
+  }
+}
