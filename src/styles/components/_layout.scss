@@ -1,6 +1,6 @@
 .main-content {
-  // In Layout.js to keep main content below navbar
-  margin-top: 3rem;
+  // In Layout.js to keep main content below navbar (only if Navbar position is fixed)
+  // margin-top: 8rem;
 }
 
 .layout-wrapper {

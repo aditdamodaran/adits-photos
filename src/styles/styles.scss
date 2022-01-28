@@ -1,7 +1,7 @@
 // Normalized Styles
 @import '../../node_modules/normalize.css/normalize.css';
 // Fonts
-@import 'fonts/fonts';
+@import 'fonts/fonts.css';
 // Base Styles
 @import 'base/base';
 // Page Specific Styles
@@ -20,5 +20,6 @@
 @import 'components/blogroll';
 @import 'components/footer';
 @import 'components/projectpreview';
+@import 'components/gallery';
 // PRISM
 @import 'prism/prism-vsc-dark-plus';

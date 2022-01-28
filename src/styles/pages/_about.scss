@@ -1,33 +1,55 @@
 #aboutmepage {
-  padding: 3rem;
-  width: 70%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: $default-width;
+  margin: 0 auto;
 
-  .title, .content > h1 {
-    font-family: 'AvenirNext-Bold', Arial;
-    font-size: calculateRem(40px);
-    color: indianred;
-  }
+    .content {
+      width: 50%;
+      margin: 0 auto;
+    }
 
-  .content > ul,
-  .content p {
-    font-family: 'AvenirNext-Regular', Arial;
-    font-size: calculateRem(32px);
-    line-height: 3rem;
-  }
+    .title, .content > h1 {
+      font-family: 'AvenirNext-Bold', Arial;
+      font-size: calculateRem(40px);
+      color: #f15161;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
 
-  .content > h1 {
-    font-family: 'AvenirNext-Bold', Arial;
-    font-size: calculateRem(40px);
-    color: indianred;
-  }
+    .about-page-image {
+      width: 70%;
+      margin: 0 auto; 
+      text-align: center;
+    }
 
-  .content a {
-    color: indianred;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'AvenirNext-Regular', Arial;
-    font-weight: bold;
-  }
+    .content > ul,
+    .content p {
+      font-family: 'AvenirNext-Regular', Arial;
+      font-size: calculateRem(20px);
+      line-height: 2rem;
+    }
+
+    .caption {
+      font-family: 'AvenirNext-Regular', Arial;
+      font-size: calculateRem(14px);
+      line-height: 1.3rem;
+    }
+
+    .content > h1 {
+      font-family: 'AvenirNext-Bold', Arial;
+      font-size: calculateRem(40px);
+      color: #f15161;
+    }
+
+    .content a {
+      color: #f15161;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'AvenirNext-Regular', Arial;
+      font-weight: bold;
+    }
 }
 
 @include mobile {
@@ -36,10 +58,18 @@
       font-size: calculateRem(30px);
     }
 
+    .content {
+      width: 100%;
+    }
+
     .content > ul,
     .content p {
       font-size: calculateRem(20px);
       line-height: 2rem;
+    }
+
+    .about-page-image {
+      width: 100%;
     }
   }
 }

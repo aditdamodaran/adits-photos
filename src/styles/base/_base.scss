@@ -3,13 +3,16 @@ $primary-background: #fff;
 $secondary-background: #333;
 $tertiary-background: #888;
 $four-background: black;
+$primary-text: #262e3b;
 $secondary-text: #444;
 $tertiary-text: #666;
 $blue-link: #0277BD;
+$red-accent: #f15161;
+$darkblue-logo: #262E3B;
 
 // MIXINS
 @function calculateRem($size) {
-  $remSize: $size / 16px;
+  $remSize: calc($size / 16px);
   @return #{$remSize}rem;
 }
 
@@ -18,6 +21,9 @@ $mobile: 768;
 $tablet: 768;
 $large: 1024;
 $desktop: 1280;
+
+// SITE WIDTH
+$default-width: 85%;
 
 @mixin mobile {
   @media only screen and (max-width: $mobile * 1px) {

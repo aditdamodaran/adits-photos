@@ -1,6 +1,13 @@
 footer {
+  margin-top: 8rem;
   width: 100%;
-  background-color: $secondary-background;
+  background-color: $darkblue-logo;
+}
+
+.footer-accent {
+  width: 100%;
+  background-color: $red-accent;
+  height: 1rem;
 }
 
 footer .logo {
@@ -17,12 +24,13 @@ footer .logo {
 .footer-content-container {
   margin: 0 auto;
   padding: 2rem 1rem;
+  padding-bottom: 4rem;
   width: 90%;
   display: flex;
   justify-content: center;
   text-align: center;
   color: white;
-  font-family: "AvenirNext-Bold", Arial;
+  font-family: "BeVietnamPro-Bold", Verdana;
   flex-wrap: wrap;
   line-height: 2rem;
   font-size: calculateRem(14px);
@@ -31,7 +39,7 @@ footer .logo {
 .footer-content-container a {
   padding: 1rem 0rem;
   color: white;
-  font-family: "AvenirNext-Bold", Arial;
+  font-family: "BeVietnamPro-Light", Verdana;
 }
 
 @include mobile {

@@ -25,62 +25,10 @@ const Navbar = class extends React.Component {
 
   componentDidMount() {
     this._isMounted = true
-      setTimeout(
-        () => {
-          window.addEventListener('scroll', () => throttle(this.state.isMounted, this.handleScroll()))
-        },
-      100);
   }
 
   componentWillUnmount() {
     this._isMounted = false
-    window.removeEventListener('scroll', () => this.handleScroll())
-  }
-
-  handleScroll = () => {
-    const isMounted = this._isMounted
-    const { scrollDirection, lastScrollTop, menuOpen, atTop } = this.state
-    const fromTop = window.scrollY
-    const DELTA = 10
-    const navHeight = 3
-    const fromTopDelta = 25
-
-    // Make sure they scroll more than DELTA (to reveal Navbar)
-    // Make sure the menu isn't open
-    // Make sure they aren't near the top (to hide Navbar) 
-    if (!isMounted){
-      return;
-    }
-
-    if (fromTop < fromTopDelta){
-      this.setState({ atTop: true });
-    }
-    
-    if (!isMounted
-      || Math.abs(lastScrollTop - fromTop) <= DELTA 
-      || menuOpen
-      || fromTop < fromTopDelta) {
-      return;
-    }
-
-    if (fromTop > fromTopDelta){
-      this.setState({ atTop: false });
-    }
-
-    // Determine Scroll Direction
-    if (fromTop < DELTA) {
-      this.setState({ scrollDirection: 'none' });
-    } else if (fromTop > lastScrollTop && fromTop > navHeight) {
-      if (scrollDirection !== 'down') {
-        this.setState({ scrollDirection: 'down' });
-      }
-    } else if (fromTop + window.innerHeight < document.body.scrollHeight) {
-      if (scrollDirection !== 'up') {
-        this.setState({ scrollDirection: 'up' });
-      }
-    }
-
-    this.setState({ lastScrollTop: fromTop });
   }
 
   toggleHamburger = () => {
@@ -112,10 +60,9 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
         style={{
-          transition: 'transform 0.3s ease-out, background-color 0.3s ease-out, box-shadow 0.3s ease-out',
+          // transition: 'transform 0.3s ease-out, background-color 0.3s ease-out, box-shadow 0.3s ease-out',
           backgroundColor: (this.state.scrollDirection === 'down' || this.state.atTop ? `transparent` : `white`),
-          boxShadow : (this.state.atTop ? `none` : `0 1px 30px -10px #333`),
-          transform : (this.state.scrollDirection === 'down' && !this.state.atTop ? `translateY(-3rem)` : `translateY(0rem)`),
+          
         }}
       >
         <div className="container">
@@ -138,8 +85,8 @@ const Navbar = class extends React.Component {
 
           <div className="navbar-brand">
             {/* LOGO */}
-            <Link to="/" className={`navbar-logo ${`display-logo`}`} title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+            <Link to="/" className={`navbar-logo display-logo`} title="Logo">
+              <img src={logo} alt="Adit" style={{ width: '88px' }} />
             </Link>
           </div>
 
@@ -151,13 +98,16 @@ const Navbar = class extends React.Component {
               className={`navbar-menu ${this.state.navBarActiveClass}`}
             >
               <div className="navbar-start">
-                {this.props.about ? null :
-                  <Link className="navbar-item" to="/about" onClick={() => this.toggleHamburger()}>
-                    About
-                  </Link>
-                }
-                <Link className="navbar-item" to="/blog" onClick={() => this.toggleHamburger()}>
-                  Blog
+                <Link 
+                  className="navbar-item" 
+                  to="/about" 
+                  onClick={() => this.toggleHamburger()}
+                  style={{
+                    'text-decoration': (this.props.about ? `underline` : `none`),
+                    // Passed from Layout.js
+                  }}
+                >
+                  About
                 </Link>
               </div>
           </CSSTransition>

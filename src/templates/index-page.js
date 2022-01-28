@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import Work from '../components/Work'
 import ProjectPreview from '../components/ProjectPreview'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import HomepageGallery from '../components/HomepageGallery'
 
 export const IndexPageTemplate = ({
   subheading,
@@ -21,6 +22,7 @@ export const IndexPageTemplate = ({
     <div
       className="landing-page-container"
     >
+    <HomepageGallery></HomepageGallery>
 
     {/*<section className="main-landing">
       <div className="landing-page-copy-container">
