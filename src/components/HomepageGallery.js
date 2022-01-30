@@ -4,6 +4,7 @@ import React from 'react'
 // import horizontal3 from "../../images/homepage/horizontal_test3.jpg"
 // import vertical from "../../images/homepage/vertical_test.jpg"
 // import square from "../../images/homepage/square_test_1.jpg"
+import { StaticImage } from "gatsby-plugin-image" 
 
 import dfw_dawn from "../../images/homepage/dfw_dawn.jpg"
 import antelope_canyon from "../../images/homepage/antelope_canyon.jpg" 
@@ -80,6 +81,8 @@ const HomepageGallery = class extends React.Component {
 
             <div className='gallery-preset gallery-preset-3'>
 
+             
+
               {/*
               <div className="gallery gallery-link preset-3-one">
                 <a href='/404' class='gallery-title'>
@@ -88,29 +91,30 @@ const HomepageGallery = class extends React.Component {
                 </a>
               </div>
               */}
+              
 
               <div className="gallery preset-3-one">
-                <img src={red_plane_color}></img>
+                <StaticImage src="../../images/homepage/red_plane_color.jpg"  alt=""/>
               </div>
 
               <div className="gallery preset-3-two">
-                <img src={white_sands_jess_red}></img>
+                <StaticImage src="../../images/homepage/white_sands_jess_1.jpg"  alt=""/>
               </div>
               
               <div className="gallery preset-3-three">
-                <img src={antelope_canyon}></img> {/* SIMPLE SHOT */}
+                <StaticImage src="../../images/homepage/antelope_canyon.jpg"  alt=""/>
               </div>
 
               <div className="gallery preset-3-four">
-                <img src={arches_dawn_2}></img>
+                <StaticImage src="../../images/homepage/arches_dawn_2.jpg"  alt=""/>
               </div>
 
               <div className="gallery preset-3-five">
-                <img src={plane_fireball_sun}></img>
+                <StaticImage src="../../images/homepage/plane_fireball_sun.jpg"  alt=""/>
               </div>
 
               <div className="gallery preset-3-six">
-                <img src={zion_jess_1}></img>
+                <StaticImage src="../../images/homepage/zion_jess_1.jpg"  alt=""/>
               </div>
 
             </div>
