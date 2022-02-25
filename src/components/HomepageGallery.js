@@ -92,6 +92,12 @@ const HomepageGallery = class extends React.Component {
               </div>
               */}
               
+              {/*<div className="gallery gallery-link preset-3-one">
+                <a href='/404' class='gallery-title'>
+                  <h2>Planes</h2>
+                  <img src={red_plane_color}></img>
+                </a>
+              </div>*/}
 
               <div className="gallery preset-3-one">
                 <StaticImage src="../../images/homepage/red_plane_color.jpg"  alt=""/>
@@ -100,10 +106,31 @@ const HomepageGallery = class extends React.Component {
               <div className="gallery preset-3-two">
                 <StaticImage src="../../images/homepage/white_sands_jess_1.jpg"  alt=""/>
               </div>
+
+              {/*<div className="gallery gallery-link preset-3-two">
+                <a href='/404' class='gallery-title'>
+                  <h2>People</h2>
+                  <img src={white_sands_jess_red}></img>
+                </a>
+              </div>
+
+              <div className="gallery gallery-link preset-3-three">
+                <a href='/404' class='gallery-title'>
+                  <h2>Places</h2>
+                  <img src={antelope_canyon}></img>
+                </a>
+              </div>*/}
               
               <div className="gallery preset-3-three">
                 <StaticImage src="../../images/homepage/antelope_canyon.jpg"  alt=""/>
               </div>
+
+              {/*<div className="gallery gallery-link preset-3-four">
+                <a href='/404' class='gallery-title'>
+                  <h2>Parks</h2>
+                  <img src={arches_dawn_2}></img>
+                </a>
+              </div>*/}
 
               <div className="gallery preset-3-four">
                 <StaticImage src="../../images/homepage/arches_dawn_2.jpg"  alt=""/>
