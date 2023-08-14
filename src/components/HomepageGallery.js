@@ -26,9 +26,24 @@ import blue_angels from "../../images/homepage/blue_angels.jpg"
 import riverwalk_boat from "../../images/homepage/riverwalk_boat.jpg"
 import otter_creek from "../../images/homepage/otter_creek.jpg"
 import big_bend_cotopaxi_1 from "../../images/homepage/big_bend_cotopaxi_1.jpg"
+import big_bend_1 from "../../images/homepage/big_bend_1.jpg"
 import damn from "../../images/homepage/damn.jpg"
 import bmw_vail from "../../images/homepage/bmw_vail.jpg"
 import delta_tetons from "../../images/homepage/delta_tetons.jpg"
+import bisti from "../../images/homepage/bisti_alien_throne.jpg"
+import bisti1 from "../../images/homepage/bisti_alien_throne2.jpg"
+import organ_needles_jess from "../../images/homepage/organ_needles_jess.jpg"
+import pch_buoy_seals from "../../images/homepage/channel_islands_seals.jpg"
+import pch_subie_wheeler from "../../images/homepage/pch_subie_wheeler.jpg"
+import crater_lake_sky_lakes_wilderness from "../../images/homepage/crater_lake_sky_lakes_wilderness.jpg"
+import rialto_hole_in_the_wall from "../../images/homepage/rialto_hole_in_the_wall.jpg"
+import sf_chinatown_motion from "../../images/homepage/sf_chinatown_motion.jpg"
+import alstrom_point from "../../images/homepage/alstrom_point.jpg"
+import miami_grand_prix_red_bull from "../../images/homepage/miami_grand_prix_red_bull.jpg"
+import subie_alstrom from "../../images/homepage/subie_alstrom1.jpg"
+import joshua_tree from "../../images/homepage/joshua_tree.jpg"
+import dead_horse_point from "../../images/homepage/dead_horse_point_c.jpg"
+
 
 // import np_white_sands_horses_1 from "../../images/homepage/np_white_sands_horses_1.jpg" 
 // import np_white_sands_horses_2 from "../../images/homepage/np_white_sands_horses_2.jpg" 
@@ -78,81 +93,120 @@ const HomepageGallery = class extends React.Component {
       <div>
         <div className="gallery-homepage">
           <div className='gallery-container'>
+            
 
-            <div className='gallery-preset gallery-preset-3'>
+          <div className='gallery-preset gallery-preset-3'>
 
-             
+                        
 
-              {/*
-              <div className="gallery gallery-link preset-3-one">
-                <a href='/404' class='gallery-title'>
-                  <h2>Chicago</h2>
-                  <img src={red_plane_color}></img>
-                </a>
-              </div>
-              */}
+            {/*
+            <div className="gallery gallery-link preset-3-one">
+              <a href='/404' class='gallery-title'>
+                <h2>Chicago</h2>
+                <img src={red_plane_color}></img>
+              </a>
+            </div>
+            */}
+
+            {/*<div className="gallery gallery-link preset-3-one">
+              <a href='/404' class='gallery-title'>
+                <h2>Planes</h2>
+                <img src={red_plane_color}></img>
+              </a>
+            </div>*/}
+
+            <div className="gallery preset-3-one">
+              {/* <img src={crater_lake_sky_lakes_wilderness}></img> */}
+              {/* <StaticImage src="../../images/homepage/pch_buoy_seals.jpg"  alt=""/> */}
+              <StaticImage src="../../images/homepage/red_plane_color.jpg"  alt=""/>
+            </div>
+
+            <div className="gallery preset-3-two">
+              <img src={antelope_canyon}></img>
+              {/* <StaticImage src="../../images/homepage/white_sands_jess_1.jpg"  alt=""/> */}
+            </div>
+
+            {/*<div className="gallery gallery-link preset-3-two">
+              <a href='/404' class='gallery-title'>
+                <h2>People</h2>
+                <img src={white_sands_jess_red}></img>
+              </a>
+            </div>
+
+            <div className="gallery gallery-link preset-3-three">
+              <a href='/404' class='gallery-title'>
+                <h2>Places</h2>
+                <img src={antelope_canyon}></img>
+              </a>
+            </div>*/}
+
+            <div className="gallery preset-3-three">
+            <img src={sf_chinatown_motion}></img>
+              {/* <StaticImage src="../../images/homepage/sf_chinatown_motion.jpg"  alt=""/> */}
+            </div>
+
+            <div className="gallery gallery-link preset-3-four">
+              <a href='/404' class='gallery-title'>
+                <h2>Parks</h2>
+                {/* <img src={bisti}></img> */}
+                <img src={arches_dawn_2}></img>
+              </a>
+            </div>
+
+            <div className="gallery preset-3-four">
               
-              {/*<div className="gallery gallery-link preset-3-one">
-                <a href='/404' class='gallery-title'>
-                  <h2>Planes</h2>
-                  <img src={red_plane_color}></img>
-                </a>
-              </div>*/}
+              {/* <StaticImage src="../../images/homepage/arches_dawn_2.jpg"  alt=""/> */}
+            </div>
 
-              <div className="gallery preset-3-one">
-                <StaticImage src="../../images/homepage/red_plane_color.jpg"  alt=""/>
-              </div>
+            <div className="gallery preset-3-five">
+              {/* <img src={crater_lake_sky_lakes_wilderness}></img> */}
+              <StaticImage src="../../images/homepage/plane_fireball_sun.jpg"  alt=""/>
+            </div>
 
-              <div className="gallery preset-3-two">
-                <StaticImage src="../../images/homepage/white_sands_jess_1.jpg"  alt=""/>
-              </div>
-
-              {/*<div className="gallery gallery-link preset-3-two">
-                <a href='/404' class='gallery-title'>
-                  <h2>People</h2>
-                  <img src={white_sands_jess_red}></img>
-                </a>
-              </div>
-
-              <div className="gallery gallery-link preset-3-three">
-                <a href='/404' class='gallery-title'>
-                  <h2>Places</h2>
-                  <img src={antelope_canyon}></img>
-                </a>
-              </div>*/}
-              
-              <div className="gallery preset-3-three">
-                <StaticImage src="../../images/homepage/antelope_canyon.jpg"  alt=""/>
-              </div>
-
-              {/*<div className="gallery gallery-link preset-3-four">
-                <a href='/404' class='gallery-title'>
-                  <h2>Parks</h2>
-                  <img src={arches_dawn_2}></img>
-                </a>
-              </div>*/}
-
-              <div className="gallery preset-3-four">
-                <StaticImage src="../../images/homepage/arches_dawn_2.jpg"  alt=""/>
-              </div>
-
-              <div className="gallery preset-3-five">
-                <StaticImage src="../../images/homepage/plane_fireball_sun.jpg"  alt=""/>
-              </div>
-
-              <div className="gallery preset-3-six">
-                <StaticImage src="../../images/homepage/zion_jess_1.jpg"  alt=""/>
-              </div>
+            <div className="gallery preset-3-six">
+              <img src={miami_grand_prix_red_bull}></img>
+              {/* <StaticImage src="../../images/homepage/zion_jess_1.jpg"  alt=""/> */}
+            </div>
 
             </div>
 
             <div className='gallery-preset gallery-preset-fullwidth'>
 
               <div className="gallery preset-fullwidth">
-                <img src={damn}></img>
+                <img src={bisti1}></img>
               </div>
 
             </div>
+
+            {/* <div className='gallery-preset gallery-preset-5'>
+
+              <div className="gallery preset-5-one">
+                <img src={subie_alstrom}></img>
+              </div>
+
+              <div className="gallery preset-5-two">
+                <img src={joshua_tree}></img>
+              </div>
+
+            </div> */}
+            
+
+
+            {/* <div className='gallery-preset gallery-preset-fullwidth'>
+
+              <div className="gallery preset-fullwidth">
+                <img src={damn}></img>
+              </div>
+
+            </div> */}
+
+            {/* <div className='gallery-preset gallery-preset-fullwidth'>
+              
+              <div className="gallery preset-fullwidth">
+                <img src={bisti}></img>
+              </div>
+
+            </div> */}
             
             <div className='gallery-preset gallery-preset-8'>
 
@@ -191,6 +245,26 @@ const HomepageGallery = class extends React.Component {
 
             </div>
 
+            {/* <div className='gallery-preset gallery-preset-7'>
+
+              <div className="gallery preset-7-one">
+                <img src={bryce_canyon_3}></img>
+              </div>
+
+              <div className="gallery preset-7-two">
+                <img src={big_bend_cotopaxi_1}></img>
+              </div>
+              
+              <div className="gallery preset-7-three">
+                <img src={riverwalk_boat}></img>  
+              </div>
+
+              <div className="gallery preset-7-four">
+                <img src={jess_arches}></img>  
+              </div>
+
+            </div> */}
+
   
             <div className='gallery-preset gallery-preset-7'>
 
@@ -211,6 +285,19 @@ const HomepageGallery = class extends React.Component {
               </div>
 
             </div>
+
+            {/* <div className='gallery-preset gallery-preset-5'>
+
+              <div className="gallery preset-5-one">
+                <img src={damn}></img>
+                <img src={miami_grand_prix_red_bull}></img>
+              </div>
+
+              <div className="gallery preset-5-two">
+                <img src={dead_horse_point}></img>
+              </div>
+
+            </div> */}
 
             <div className='gallery-preset gallery-preset-fullwidth'>
 
