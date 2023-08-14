@@ -94,562 +94,153 @@ const HomepageGallery = class extends React.Component {
         <div className="gallery-homepage">
           <div className='gallery-container'>
             
-
-          <div className='gallery-preset gallery-preset-3'>
-
-                        
-
-            {/*
-            <div className="gallery gallery-link preset-3-one">
-              <a href='/404' class='gallery-title'>
-                <h2>Chicago</h2>
-                <img src={red_plane_color}></img>
-              </a>
-            </div>
-            */}
-
-            {/*<div className="gallery gallery-link preset-3-one">
-              <a href='/404' class='gallery-title'>
-                <h2>Planes</h2>
-                <img src={red_plane_color}></img>
-              </a>
-            </div>*/}
-
-            <div className="gallery preset-3-one">
-              {/* <img src={crater_lake_sky_lakes_wilderness}></img> */}
-              {/* <StaticImage src="../../images/homepage/pch_buoy_seals.jpg"  alt=""/> */}
-              <StaticImage src="../../images/homepage/red_plane_color.jpg"  alt=""/>
-            </div>
-
-            <div className="gallery preset-3-two">
-              <img src={antelope_canyon}></img>
-              {/* <StaticImage src="../../images/homepage/white_sands_jess_1.jpg"  alt=""/> */}
-            </div>
-
-            {/*<div className="gallery gallery-link preset-3-two">
-              <a href='/404' class='gallery-title'>
-                <h2>People</h2>
-                <img src={white_sands_jess_red}></img>
-              </a>
-            </div>
-
-            <div className="gallery gallery-link preset-3-three">
-              <a href='/404' class='gallery-title'>
-                <h2>Places</h2>
-                <img src={antelope_canyon}></img>
-              </a>
-            </div>*/}
-
-            <div className="gallery preset-3-three">
-            <img src={sf_chinatown_motion}></img>
-              {/* <StaticImage src="../../images/homepage/sf_chinatown_motion.jpg"  alt=""/> */}
-            </div>
-
-            <div className="gallery gallery-link preset-3-four">
-              <a href='/404' class='gallery-title'>
-                <h2>Parks</h2>
-                {/* <img src={bisti}></img> */}
-                <img src={arches_dawn_2}></img>
-              </a>
-            </div>
-
-            <div className="gallery preset-3-four">
-              
-              {/* <StaticImage src="../../images/homepage/arches_dawn_2.jpg"  alt=""/> */}
-            </div>
-
-            <div className="gallery preset-3-five">
-              {/* <img src={crater_lake_sky_lakes_wilderness}></img> */}
-              <StaticImage src="../../images/homepage/plane_fireball_sun.jpg"  alt=""/>
-            </div>
-
-            <div className="gallery preset-3-six">
-              <img src={miami_grand_prix_red_bull}></img>
-              {/* <StaticImage src="../../images/homepage/zion_jess_1.jpg"  alt=""/> */}
-            </div>
-
-            </div>
-
-            <div className='gallery-preset gallery-preset-fullwidth'>
-
-              <div className="gallery preset-fullwidth">
-                <img src={bisti1}></img>
-              </div>
-
-            </div>
-
-            {/* <div className='gallery-preset gallery-preset-5'>
-
-              <div className="gallery preset-5-one">
-                <img src={subie_alstrom}></img>
-              </div>
-
-              <div className="gallery preset-5-two">
-                <img src={joshua_tree}></img>
-              </div>
-
-            </div> */}
-            
-
-
-            {/* <div className='gallery-preset gallery-preset-fullwidth'>
-
-              <div className="gallery preset-fullwidth">
-                <img src={damn}></img>
-              </div>
-
-            </div> */}
-
-            {/* <div className='gallery-preset gallery-preset-fullwidth'>
-              
-              <div className="gallery preset-fullwidth">
-                <img src={bisti}></img>
-              </div>
-
-            </div> */}
-            
-            <div className='gallery-preset gallery-preset-8'>
-
-              <div className="gallery preset-8-one">
-                <img src={chicago_riverwalk_1}></img>
-              </div>
-
-              <div className="gallery preset-8-two">
-                <img src={oak_street_jump}></img>
-              </div>
-              
-              <div className="gallery preset-8-three">
-                <img src={blue_angels}></img>
-              </div>
-
-            </div>
-
-            <div className='gallery-preset gallery-preset-5'>
-
-              <div className="gallery preset-5-one">
-                <img src={womans_march}></img>
-              </div>
-
-              <div className="gallery preset-5-two">
-                <img src={jackson_cta}></img>
-              </div>
-
-            </div>
-
-
-            <div className='gallery-preset gallery-preset-fullwidth'>
-
-              <div className="gallery preset-fullwidth">
-                <img src={otter_creek}></img>
-              </div>
-
-            </div>
-
-            {/* <div className='gallery-preset gallery-preset-7'>
-
-              <div className="gallery preset-7-one">
-                <img src={bryce_canyon_3}></img>
-              </div>
-
-              <div className="gallery preset-7-two">
-                <img src={big_bend_cotopaxi_1}></img>
-              </div>
-              
-              <div className="gallery preset-7-three">
-                <img src={riverwalk_boat}></img>  
-              </div>
-
-              <div className="gallery preset-7-four">
-                <img src={jess_arches}></img>  
-              </div>
-
-            </div> */}
-
-  
-            <div className='gallery-preset gallery-preset-7'>
-
-              <div className="gallery preset-7-one">
-                <img src={bryce_canyon_3}></img>
-              </div>
-
-              <div className="gallery preset-7-two">
-                <img src={big_bend_cotopaxi_1}></img>
-              </div>
-              
-              <div className="gallery preset-7-three">
-                <img src={riverwalk_boat}></img>  
-              </div>
-
-              <div className="gallery preset-7-four">
-                <img src={jess_arches}></img>  
-              </div>
-
-            </div>
-
-            {/* <div className='gallery-preset gallery-preset-5'>
-
-              <div className="gallery preset-5-one">
-                <img src={damn}></img>
-                <img src={miami_grand_prix_red_bull}></img>
-              </div>
-
-              <div className="gallery preset-5-two">
-                <img src={dead_horse_point}></img>
-              </div>
-
-            </div> */}
-
-            <div className='gallery-preset gallery-preset-fullwidth'>
-
-              <div className="gallery preset-fullwidth">
-                <img src={dfw_dawn}></img>
-              </div>
-
-            </div>
-
-            <div className='gallery-preset gallery-preset-5'>
-
-              <div className="gallery preset-5-one">
-                <img src={jess_lopresti}></img>
-              </div>
-
-              <div className="gallery preset-5-two">
-                <img src={bmw_vail}></img>
-              </div>
-
-            </div>
-            
-
-            <div className='gallery-preset gallery-preset-fullwidth'>
-
-              <div className="gallery preset-fullwidth">
-                <img src={delta_tetons}></img>
-              </div>
-
-            </div>
-
-
-            <div className='gallery-column-template gallery-column-2'>
-
-              <div className="gallery">
-                <img src={retro_diner_car}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={horses_1}></img>
-              </div>
-
-            </div>
-
-            {/*<div className='gallery-preset gallery-preset-5'>
-
-              <div className="gallery preset-5-one">
-                <img src={chicago_station}></img>
-              </div>
-
-              <div className="gallery preset-5-two">
-                <img src={motel}></img>
-              </div>
-
-            </div>*/}
-
-           
-            
-
-            {/*<div className='gallery-preset gallery-preset-7'>
-
-              <div className="gallery preset-7-one">
-                <img src={big_bend_sunset_jess}></img>
-              </div>
-
-              <div className="gallery preset-7-two">
-                <img src={big_bend_santa_elena_large}></img>
-              </div>
-              
-              <div className="gallery preset-7-three">
-                <img src={big_bend_cotopaxi_1}></img>  
-              </div>
-
-              <div className="gallery preset-7-four">
-                <img src={jess_lopresti}></img>  
-              </div>
-
-            </div>*/}
-            
-
-            {/*  
-            <div className='gallery-preset gallery-preset-6'>
-
-              <div className="gallery preset-6-one">
-                <img src={riverwalk_boat}></img>
-              </div>
-
-              <div className="gallery preset-6-two">
-                <img src={bryce_canyon_2}></img>
-              </div>
-              
-              <div className="gallery preset-6-three">
-                <img src={diner_retro_car}></img>  
-              </div>
-
-              <div className="gallery preset-6-four">
-                <img src={antelope_canyon}></img>  
-              </div>
-
-              <div className="gallery preset-6-five">
-                <img src={jess_arches}></img>
-              </div>
-
-              <div className="gallery preset-6-six">
-                <img src={plane_fireball_sun}></img>
-              </div>
-
-              <div className="gallery preset-6-seven">
-                <img src={dead_horse_point}></img>
-              </div>
-
-            </div>
-            */}
-
-            {/* 
-            <div className='gallery-column-template gallery-column-3'>
-
-              <div className="gallery">
-                <img src={mansu}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={bicycle_snow}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={np_white_sands_horses}></img>
-              </div>
-
-            </div>
-            */}
-
-            {/* 
-            <div className='gallery-preset gallery-preset-4'>
-
-              <div className="gallery preset-4-one">
-                <img src={big_bend_santa_elena_large}></img>
-              </div>
-
-              <div className="gallery preset-4-two">
-                <img src={big_bend_large}></img>
-              </div>
-
-            </div>
-           */}
-
-            {/*
-            <div className='gallery-preset gallery-preset-2-inverse'>
-
-              <div className="gallery preset-2-inverse-one">
-                <img src={jackson_cta_large}></img>
-              </div>
-
-              <div className="gallery preset-2-inverse-two">
-                <img src={womans_march}></img>
-              </div>
-              
-              <div className="gallery preset-2-inverse-three">
-                <img src={bryce_canyon_2}></img>
-              </div>
-
-            </div>
-          */}
-            
-
-            {/*<div className='gallery-column-template gallery-column-2'>
-
-              <div className="gallery">
-                <img src={jess_lopresti}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={dfw_dawn}></img>
-              </div>
-
-            </div>*/}
-
-
-            {/*<div className='gallery-preset gallery-preset-2-inverse'>
-
-              <div className="gallery preset-2-inverse-one">
-                <img src={bryce_canyon_fog}></img>
-              </div>
-
-              <div className="gallery preset-2-inverse-two">
-                <img src={jess_lopresti}></img>
-              </div>
-              
-              <div className="gallery preset-2-inverse-three">
-                <img src={dfw_dawn}></img>
-              </div>
-
-            </div>*/}
-
-            {/*<div className='gallery-preset gallery-preset-3'>
+            {/* FIRST GALLERY */}
+            <div className='gallery-preset gallery-preset-3'>
 
               <div className="gallery preset-3-one">
-                <img src={np_white_sands_horses}></img>
+                <StaticImage src="../../images/homepage/red_plane_color.jpg"  alt=""/>
               </div>
 
               <div className="gallery preset-3-two">
-                <img src={jess_lopresti}></img>
+                <StaticImage src="../../images/homepage/antelope_canyon.jpg"  alt=""/>
               </div>
-              
+
               <div className="gallery preset-3-three">
-                <img src={morning_tetons}></img>
+                <StaticImage src="../../images/homepage/sf_chinatown_motion.jpg"  alt=""/>
+              </div>
+
+              <div className="gallery gallery-link preset-3-four">
+                <a href='/404' class='gallery-title'>
+                  <h2>Parks</h2>
+                  <img src={arches_dawn_2} loading="lazy"></img>
+                </a>
               </div>
 
               <div className="gallery preset-3-four">
-                <img src={dfw_dawn}></img>
               </div>
 
               <div className="gallery preset-3-five">
-                <img src={chicago_riverwalk}></img>
+                <StaticImage src="../../images/homepage/plane_fireball_sun.jpg"  alt=""/>
               </div>
 
               <div className="gallery preset-3-six">
-                <img src={chatt_sunset}></img>
+                <StaticImage src="../../images/homepage/miami_grand_prix_red_bull.jpg" alt=""/> 
               </div>
 
             </div>
 
-
+            {/* SECOND GALLERY */}
             <div className='gallery-preset gallery-preset-fullwidth'>
 
               <div className="gallery preset-fullwidth">
-                <img src={antelope_canyon}></img>
+                <StaticImage src="../../images/homepage/bisti_alien_throne2.jpg" loading="lazy" alt=""/> 
+              </div>
+
+            </div>
+            
+            {/* THIRD GALLERY */}
+            <div className='gallery-preset gallery-preset-8'>
+
+              <div className="gallery preset-8-one">
+                <img src={chicago_riverwalk_1} loading="lazy"></img>
+              </div>
+
+              <div className="gallery preset-8-two">
+                <img src={oak_street_jump} loading="lazy"></img>
+              </div>
+              
+              <div className="gallery preset-8-three">
+                <img src={blue_angels} loading="lazy"></img>
               </div>
 
             </div>
 
+            {/* FOURTH GALLERY */}
+            <div className='gallery-preset gallery-preset-5'>
 
-            <div className='gallery-column-template gallery-column-3'>
-
-              <div className="gallery">
-                <img src={square}></img>
+              <div className="gallery preset-5-one">
+                <img src={womans_march} loading="lazy"></img>
               </div>
 
-              <div className="gallery">
-                <img src={vertical}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={horizontal1}></img>
+              <div className="gallery preset-5-two">
+                <img src={jackson_cta} loading="lazy"></img>
               </div>
 
             </div>
 
-            <div className='gallery-column-template gallery-column-4'>
+            {/* FIFTH GALLERY */}
+            <div className='gallery-preset gallery-preset-fullwidth'>
 
-              <div className="gallery">
-                <img src={horizontal2}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={horizontal3}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={horizontal1}></img>
-              </div>
-
-              <div className="gallery">
-                <img src={square}></img>
+              <div className="gallery preset-fullwidth">
+                <img src={otter_creek} loading="lazy"></img>
               </div>
 
             </div>
 
+            {/* SIXTH GALLERY */}
+            <div className='gallery-preset gallery-preset-7'>
 
+              <div className="gallery preset-7-one">
+                <img src={bryce_canyon_3} loading="lazy"></img>
+              </div>
+
+              <div className="gallery preset-7-two">
+                <img src={big_bend_cotopaxi_1} loading="lazy"></img>
+              </div>
+              
+              <div className="gallery preset-7-three">
+                <img src={riverwalk_boat} loading="lazy"></img>  
+              </div>
+
+              <div className="gallery preset-7-four">
+                <img src={jess_arches} loading="lazy"></img>  
+              </div>
+
+            </div>
+
+            {/* SEVENTH GALLERY */}
+            <div className='gallery-preset gallery-preset-fullwidth'>
+
+              <div className="gallery preset-fullwidth">
+                <img src={dfw_dawn} loading="lazy"></img>
+              </div>
+
+            </div>
+
+            {/* EIGHTH GALLERY */}
+            <div className='gallery-preset gallery-preset-5'>
+
+              <div className="gallery preset-5-one">
+                <img src={jess_lopresti} loading="lazy"></img>
+              </div>
+
+              <div className="gallery preset-5-two">
+                <img src={bmw_vail} loading="lazy"></img>
+              </div>
+
+            </div>
+
+            {/* NINTH GALLERY */}
+            <div className='gallery-preset gallery-preset-fullwidth'>
+
+              <div className="gallery preset-fullwidth">
+                <img src={delta_tetons} loading="lazy"></img>
+              </div>
+
+            </div>
+
+            {/* TENTH GALLERY */}
             <div className='gallery-column-template gallery-column-2'>
 
               <div className="gallery">
-                <img src={horizontal1}></img>
+                <img src={retro_diner_car} loading="lazy"></img>
               </div>
 
               <div className="gallery">
-                <img src={horizontal2}></img>
+                <img src={horses_1} loading="lazy"></img>
               </div>
 
             </div>
-
-
-            <div className='gallery-preset gallery-preset-1'>
-
-              <div className="gallery preset-1-one">
-                <img src={vertical}></img>
-              </div>
-
-              <div className="gallery preset-1-two">
-                <img src={horizontal2}></img>
-              </div>
-              
-              <div className="gallery preset-1-three">
-                <img src={horizontal2}></img>
-              </div>
-
-            </div>
-
-            <div className='gallery-preset gallery-preset-1-inverse'>
-
-              <div className="gallery preset-1-inverse-one">
-                <img src={vertical}></img>
-              </div>
-
-              <div className="gallery preset-1-inverse-two">
-                <img src={horizontal2}></img>
-              </div>
-              
-              <div className="gallery preset-1-inverse-three">
-                <img src={horizontal2}></img>
-              </div>
-
-            </div>
-
-            <div className='gallery-preset gallery-preset-2'>
-
-              <div className="gallery preset-2-one">
-                <img src={square}></img>
-              </div>
-
-              <div className="gallery preset-2-two">
-                <img src={horizontal3}></img>
-              </div>
-              
-              <div className="gallery preset-2-three">
-                <img src={horizontal3}></img>
-              </div>
-
-            </div>
-
-            <div className='gallery-preset gallery-preset-2-inverse'>
-
-              <div className="gallery preset-2-inverse-one">
-                <img src={square}></img>
-              </div>
-
-              <div className="gallery preset-2-inverse-two">
-                <img src={horizontal3}></img>
-              </div>
-              
-              <div className="gallery preset-2-inverse-three">
-                <img src={horizontal3}></img>
-              </div>
-
-            </div>
-
-            <div className='gallery-preset gallery-preset-fullwidth'>
-
-              <div className="gallery preset-fullwidth">
-                <img src={horizontal1}></img>
-              </div>
-
-            </div>*/}
 
           </div>
         </div>
@@ -659,40 +250,3 @@ const HomepageGallery = class extends React.Component {
 }
 
 export default HomepageGallery
-
-// export default (props) => (
-//   <StaticQuery
-//     query={graphql`
-//       query GalleryQuery {
-//         allMarkdownRemark(
-//           sort: { order: DESC, fields: [frontmatter___date] }
-//           filter: { frontmatter: { templateKey: { eq: "homepage-gallery" } } }
-//         ) {
-//           edges {
-//             node {
-//               excerpt(pruneLength: 400)
-//               id
-//               fields {
-//                 slug
-//               }
-//               frontmatter {
-//                 title
-//                 templateKey
-//                 date(formatString: "MMMM DD, YYYY")
-//                 featuredimage {
-//                   childImageSharp {
-//                     fluid(maxWidth: 1000, quality: 100) {
-//                       ...GatsbyImageSharpFluid
-//                     }
-//                   }
-//                 }
-//                 tags
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `}
-//     render={(data, count) => <Gallery data={data} count={count} index={props.index}/>}
-//   />
-// )
