@@ -112,7 +112,7 @@ const HomepageGallery = class extends React.Component {
               <div className="gallery gallery-link preset-3-four">
                 <a href='/404' class='gallery-title'>
                   <h2>Parks</h2>
-                  <img src={arches_dawn_2} loading="lazy"></img>
+                  <img src={arches_dawn_2} ></img>
                 </a>
               </div>
 
@@ -133,7 +133,7 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-fullwidth'>
 
               <div className="gallery preset-fullwidth">
-                <StaticImage src="../../images/homepage/bisti_alien_throne2.jpg" loading="lazy" alt=""/> 
+                <StaticImage src="../../images/homepage/bisti_alien_throne2.jpg"  alt=""/> 
               </div>
 
             </div>
@@ -142,15 +142,15 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-8'>
 
               <div className="gallery preset-8-one">
-                <img src={chicago_riverwalk_1} loading="lazy"></img>
+                <img src={chicago_riverwalk_1} ></img>
               </div>
 
               <div className="gallery preset-8-two">
-                <img src={oak_street_jump} loading="lazy"></img>
+                <img src={oak_street_jump} ></img>
               </div>
               
               <div className="gallery preset-8-three">
-                <img src={blue_angels} loading="lazy"></img>
+                <img src={blue_angels} ></img>
               </div>
 
             </div>
@@ -159,11 +159,11 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-5'>
 
               <div className="gallery preset-5-one">
-                <img src={womans_march} loading="lazy"></img>
+                <img src={womans_march} ></img>
               </div>
 
               <div className="gallery preset-5-two">
-                <img src={jackson_cta} loading="lazy"></img>
+                <img src={jackson_cta} ></img>
               </div>
 
             </div>
@@ -172,7 +172,7 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-fullwidth'>
 
               <div className="gallery preset-fullwidth">
-                <img src={otter_creek} loading="lazy"></img>
+                <img src={otter_creek} ></img>
               </div>
 
             </div>
@@ -181,19 +181,19 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-7'>
 
               <div className="gallery preset-7-one">
-                <img src={bryce_canyon_3} loading="lazy"></img>
+                <img src={bryce_canyon_3} ></img>
               </div>
 
               <div className="gallery preset-7-two">
-                <img src={big_bend_cotopaxi_1} loading="lazy"></img>
+                <img src={big_bend_cotopaxi_1} ></img>
               </div>
               
               <div className="gallery preset-7-three">
-                <img src={riverwalk_boat} loading="lazy"></img>  
+                <img src={riverwalk_boat} ></img>  
               </div>
 
               <div className="gallery preset-7-four">
-                <img src={jess_arches} loading="lazy"></img>  
+                <img src={jess_arches} ></img>  
               </div>
 
             </div>
@@ -202,7 +202,7 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-fullwidth'>
 
               <div className="gallery preset-fullwidth">
-                <img src={dfw_dawn} loading="lazy"></img>
+                <img src={dfw_dawn} ></img>
               </div>
 
             </div>
@@ -211,11 +211,11 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-5'>
 
               <div className="gallery preset-5-one">
-                <img src={jess_lopresti} loading="lazy"></img>
+                <img src={jess_lopresti} ></img>
               </div>
 
               <div className="gallery preset-5-two">
-                <img src={bmw_vail} loading="lazy"></img>
+                <img src={bmw_vail} ></img>
               </div>
 
             </div>
@@ -224,7 +224,7 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-preset gallery-preset-fullwidth'>
 
               <div className="gallery preset-fullwidth">
-                <img src={delta_tetons} loading="lazy"></img>
+                <img src={delta_tetons} ></img>
               </div>
 
             </div>
@@ -233,11 +233,11 @@ const HomepageGallery = class extends React.Component {
             <div className='gallery-column-template gallery-column-2'>
 
               <div className="gallery">
-                <img src={retro_diner_car} loading="lazy"></img>
+                <img src={retro_diner_car} ></img>
               </div>
 
               <div className="gallery">
-                <img src={horses_1} loading="lazy"></img>
+                <img src={horses_1} ></img>
               </div>
 
             </div>
